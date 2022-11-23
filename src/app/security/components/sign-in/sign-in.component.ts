@@ -18,10 +18,8 @@ export class SignInComponent implements OnInit {
   }
 
   public singIn(userEmail: string, userPassword: string) {
-    console.log('user', userEmail, userPassword);
     this.authService.SignIn(userEmail, userPassword).then(result => {
-      console.log('result', result);
-    })
+    });
   }
 
   public goToRegister() {
