@@ -1,8 +1,26 @@
+## Intro in PT-BR.
+
+Desenvolvimento FRONT-END, com Auth FIREBASE. 
+
+Desenvolvimento Angular 14+ de acordo com arquitetura e boas práticas.
+
+Cocriação e integrações com APIs.
+
+Avaliação de viabilidade técnica de uma proposta de solução (UI/UX).
+
+Criação de bibliotecas de códigos reutilizáveis.
+
+
+
 # AppFirebase
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
 ## Development server
+
+Run `npm install`.
+
+And
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
