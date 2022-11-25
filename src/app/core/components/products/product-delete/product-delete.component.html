@@ -1,0 +1,15 @@
+<section>
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+        <h3 fxFlex="100" class="modal__title">Excluir produto</h3>
+        <h6 fxFlex="100" class="modal__subtitle">
+            Quer realmente excluir o produto
+            "<strong [innerHtml]="data.name"></strong>"<br>
+            Essa ação não poderá ser desfeita.
+        </h6>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center">
+        <div>
+            <button (click)="deleteProduct()" mat-raised-button fxFlexFill color="primary">EXCLUIR PRODUTO</button>
+        </div>
+    </div>
+</section>

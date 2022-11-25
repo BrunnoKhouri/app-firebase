@@ -1,0 +1,44 @@
+<!-- page__header -->
+<section class="page__header is-primary col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="container__mobile col-md-12">
+        <!-- page__heading -->
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Configurações</h1>
+        </div>
+    </div>
+</section>
+
+<!-- page__content -->
+<section class="page__content configuration" fxLayout="row" fxLayoutAlign="center center">
+    <div class="card" fxLayout="row">
+        <div>
+            <img class="img" src="\assets\config\gerenciar-products.png" alt="imagem" />
+        </div>
+        <div class="content-text media-body" fxLayout="column" fxLayoutAlign="space-around baseline">
+            <span fxLayoutAlign="start center">
+                <i class="material-icons">add_business</i>
+                <p><strong>Empresa nova?</strong></p>
+            </span>
+            <p class="subtitle">Adicione novas empresas ou edite as informações.</p>
+            <button mat-raised-button class="button__medium button__outline" (click)="goToManagerCompanies()">
+                GERENCIAR EMPRESAS
+            </button>
+        </div>
+    </div>
+    <div class="card" fxLayout="row">
+        <div>
+            <img class="img" src="assets\config\gerenciar-products.png" alt="imagem" />
+        </div>
+        <div class="content-text media-body" fxLayout="column" fxLayoutAlign="space-around baseline">
+            <span fxLayoutAlign="start center">
+                <i class="material-icons">group_work</i>
+                <p><strong>Precisa adicionar produtos?</strong></p>
+            </span>
+            <p class="subtitle">Cadastre um novo produto</p>
+            <button mat-raised-button class="button__medium button__outline" (click)="goToManagerProducts()">
+                GERENCIAR PRODUTO
+            </button>
+        </div>
+
+    </div>
+</section>

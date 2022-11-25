@@ -1,0 +1,132 @@
+
+//* --------------------------------------------- Typography--------------------*//
+.titles {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+  &__one {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: bold;
+  }
+
+  &__two {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  &__three {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  &__three__bold {
+    font-size: 34px;
+    line-height: 51px;
+    font-weight: bold;
+  }
+
+  &__four {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__five {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.subtitles {
+  font-family: 'Roboto', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+
+  &__one {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  &__two {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &__three {
+    font-size: 18px !important;
+    line-height: 27px;
+  }
+
+  &__three__bold {
+    font-size: 18px !important;
+    line-height: 27px;
+    font-weight: bold;
+  }
+
+  &__four {
+    font-size: 14px !important;
+    line-height: 16px;
+  }
+
+  &__five {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &__five-2 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__six {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__seven {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__plain-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__overline {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__caption {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.break {
+  word-break: break-word;
+  margin: 0 !important;
+}
+
+
+// --------------------------------------- Buttons disable
+.is-disable {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: inherit;
+}
+
+.mat-radio-button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// --------------------------------------- Breadcrumbs
+.backOptions {
+  cursor: pointer;
+  padding: 8px 16px;
+  color: #fff;
+}
+
+

@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin-right: 15px;
+}
+
+.button-close{
+    display: flex;
+    justify-content: flex-end;
+}

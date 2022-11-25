@@ -83,10 +83,10 @@ export class AuthService {
       });
   }
   // Returns true when user is looged in and email is verified
-  get isLoggedIn():boolean  {
+  get isLoggedIn(): boolean {
     const savedUser = localStorage.getItem('user');
     const user = savedUser ? JSON.parse(savedUser) : null;
-        
+
     return (user !== null && user.emailVerified !== false) ? true : false;
   }
   // Sign in with Google
@@ -100,9 +100,7 @@ export class AuthService {
     return this.afAuth
       .signInWithPopup(provider)
       .then((result) => {
-        console.log("entrou");
         this.router.navigate(['dashboard']);
-        console.log("saiu");
         this.SetUserData(result.user);
       })
       .catch((error) => {

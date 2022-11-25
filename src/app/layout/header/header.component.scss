@@ -1,0 +1,12 @@
+mat-toolbar {
+  background: #000000;
+  height: 55px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    cursor: pointer;
+  }
+}
