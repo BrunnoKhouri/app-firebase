@@ -8,16 +8,18 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./verify-email-address.component.scss']
 })
 export class VerifyEmailAddressComponent implements OnInit {
+ 
 
   constructor(
     public authService: AuthService,
-    public router: Router
+    public router: Router,
+   
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
   }
 
   public goToLogin() {
-    this.router.navigate(['/sign-in'])
+    this.router.navigate(['/sign-in']);
   }
 }

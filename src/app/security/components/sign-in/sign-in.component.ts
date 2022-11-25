@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,20 +10,35 @@ import { Router } from '@angular/router';
 })
 export class SignInComponent implements OnInit {
 
+  public loginForm: FormGroup = this.fb.group({
+    email: this.fb.control('', [Validators.required, Validators.email]),
+    password: this.fb.control('', [Validators.required])
+  });;
+
   constructor(
+    private fb: FormBuilder,
     public authService: AuthService,
     public router: Router
-  ) { }
+  ) {
 
-  ngOnInit(): void {
   }
 
-  public singIn(userEmail: string, userPassword: string) {
-    this.authService.SignIn(userEmail, userPassword).then(result => {
-    });
+
+  ngOnInit(): void {
+    this.loginForm;
+  }
+
+  public singIn() {
+    let email = this.loginForm.value.email;
+    let password = this.loginForm.value.password;
+    this.authService.SignIn(email, password).then(result => result);
+  }
+
+  public goToPassword() {
+    this.router.navigate(['/forgot-password']);
   }
 
   public goToRegister() {
-    this.router.navigate(['/register-user'])
+    this.router.navigate(['/register-user']);
   }
 }

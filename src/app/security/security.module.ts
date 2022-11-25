@@ -5,7 +5,7 @@ import { RegisterUserComponent } from './components/register-user/register-user.
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailAddressComponent } from './components/verify-email-address/verify-email-address.component';
 import { AuthService } from './services/auth.service';
-
+import { HttpClientModule } from '@angular/common/http';
 // Firebase services + environment module
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -13,6 +13,7 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../../environments/environment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,6 +30,9 @@ import { environment } from '../../environments/environment';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [AuthService],
 })
