@@ -140,3 +140,8 @@ table {
   font-size: 10px !important;
   color: #1976d2;
 }
+
+
+::ng-deep .backDialog  > mat-dialog-container {
+  background: #000000;
+}

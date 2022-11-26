@@ -34,7 +34,8 @@ export class ProductsComponent implements OnInit {
   navigateToProductUpdate(productsUpdate: Product): void {
     const dialogRef = this.dialog.open(ProductUpdateComponent, {
       width: '700px',
-      data: productsUpdate
+      data: productsUpdate,
+      panelClass: "backDialog"
     });
     dialogRef.afterClosed().subscribe((mustUpdate) => {
       (mustUpdate)
@@ -45,7 +46,8 @@ export class ProductsComponent implements OnInit {
   navigateToProductDelete(prodcutDelete: Product): void {
     const dialogRef = this.dialog.open(ProductDeleteComponent, {
       width: '800px',
-      data: prodcutDelete
+      data: prodcutDelete,      
+      panelClass: "backDialog"
     });
     dialogRef.afterClosed().subscribe((mustUpdate) => {
       (mustUpdate)
@@ -57,7 +59,8 @@ export class ProductsComponent implements OnInit {
     const dialogRef = this.dialog.open(ProductCreateComponent, {
       width: '700px',
       enterAnimationDuration,
-      exitAnimationDuration
+      exitAnimationDuration,
+      panelClass: "backDialog"
     });
     dialogRef.afterClosed().subscribe((mustUpdate) => {
       (mustUpdate)
