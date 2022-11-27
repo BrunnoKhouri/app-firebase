@@ -21,4 +21,8 @@ export class ConfigurationComponent implements OnInit {
     this.router.navigate(['/products']);
   }
 
+  public goToManagerShopping() {
+    this.router.navigate(['/shopping']);
+  }
+
 }

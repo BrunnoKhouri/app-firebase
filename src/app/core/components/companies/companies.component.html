@@ -1,19 +1,52 @@
-<section>
-    <div class="container">
-        <div class="box">
+<section class="page__header is-primary">
+    <div class="container__mobile">
+        <!-- page__heading -->
+        <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center center" class="page__heading">
+            <h3 fxFlex="100" class="page__title">Gerenciar Empresas</h3>
+            <p fxFlex="100" class="page__subtitle">Adicione, remova ou edite as Empresas</p>
+        </div>
+    </div>
+</section>
+<section class="page__content configuration" fxLayout="row" fxLayoutAlign="center center">
+    <div class="card__table">
+        <div fxlayout="row" fxLayoutAlign="none center" class="users__list">
+            <p class="list__title"><strong>Empresas</strong></p>
+            <button mat-raised-button (click)="navigateToHome()">
+                Voltar Home
+            </button>
+        </div>
 
-            <div class="title">
-                <span class="block"></span>
-                <h1>Page in build<span></span></h1>
-            </div>
-            <br>
-            <div class="role">
-                <div class="block"></div>
-                <p>B.Khouri - Front-End</p>
-            </div>
+        <mat-card>
+            <table mat-table [dataSource]="dataSource">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> ID </th>
+                    <td mat-cell *matCellDef="let companie"> {{companie.id}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let companie"> {{companie.name}} </td>
+                </ng-container>
+
+                <!-- CNPJ Column -->
+                <ng-container matColumnDef="cnpj">
+                    <th mat-header-cell *matHeaderCellDef> CNPJ </th>
+                    <td mat-cell *matCellDef="let companie"> {{companie.cnpj}} </td>
+                </ng-container>
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of Companies">
+            </mat-paginator>
+        </mat-card>
+        <div class="content-buttons">
 
         </div>
-        <img src="./../../../../assets/config/build.png" alt="building">
     </div>
-
 </section>

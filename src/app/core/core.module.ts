@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ProductService } from './services/product.service';
+import { ShoppingComponent } from './components/shopping/shopping.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ProductService } from './services/product.service';
     ProductCreateComponent,
     ProductDeleteComponent,
     ProductUpdateComponent,
+    ShoppingComponent,
   
   ],
   imports: [

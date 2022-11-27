@@ -27,6 +27,21 @@
     </div>
     <div class="card" fxLayout="row">
         <div>
+            <img class="img" src="\assets\config\gerenciar-shopping.png" alt="imagem" />
+        </div>
+        <div class="content-text media-body" fxLayout="column" fxLayoutAlign="space-around baseline">
+            <span fxLayoutAlign="start center">
+                <i class="material-icons">storefront</i>
+                <p><strong>Cadastrar compra ?</strong></p>
+            </span>
+            <p class="subtitle">Adicione as compras realizadas</p>
+            <button mat-raised-button class="button__medium button__outline" (click)="goToManagerShopping()">
+                GERENCIAR COMPRAS
+            </button>
+        </div>
+    </div>
+    <div class="card" fxLayout="row">
+        <div>
             <img class="img" src="assets\config\gerenciar-products.png" alt="imagem" />
         </div>
         <div class="content-text media-body" fxLayout="column" fxLayoutAlign="space-around baseline">

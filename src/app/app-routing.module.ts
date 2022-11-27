@@ -8,7 +8,7 @@ import { VerifyEmailAddressComponent } from './security/components/verify-email-
 import { AuthGuard } from './security/guards/auth.guard';
 import { CompaniesComponent } from './core/components/companies/companies.component';
 import { ProductsComponent } from './core/components/products/products.component';
-
+import { ShoppingComponent } from './core/components/shopping/shopping.component';
 
 const routes: Routes = [
 
@@ -20,10 +20,12 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'companies', component: CompaniesComponent, canActivate: [AuthGuard] },
   { path: 'products', component: ProductsComponent, canActivate: [AuthGuard] },
+  { path: 'shopping', component: ShoppingComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+
 
   exports: [RouterModule]
 })
